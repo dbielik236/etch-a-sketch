@@ -3,12 +3,11 @@ header {
     font-size: 50px;
 }
 
-
 #container {
-    background-color: white;
+    background-color: grey;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(100, auto);
+
     height: 500px;
     width: 500px;
     
@@ -18,7 +17,7 @@ header {
 
 .content {
     text-align: center;
-    color: white;
+    
 }
 
 .black {
@@ -26,10 +25,4 @@ header {
     background-color: black;
 }
 
-/*
-.content:hover {
-    background-color: grey;
-    color: grey;
-}
-*/
 
