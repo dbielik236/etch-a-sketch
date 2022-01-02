@@ -6,7 +6,14 @@ for (i=1; i<number+1; i++) {
     content.classList.add('content');
     content.textContent = i;
     container.appendChild(content); 
-}
+
+}   
 
 
 
+const contents = document.querySelectorAll('div');
+contents.forEach((div) => {
+  div.addEventListener('mouseover', () => {
+    console.log('Works!');
+  });
+});

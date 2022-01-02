@@ -1,7 +1,8 @@
 #container {
     background-color: white;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     height: 500px;
     width: 500px;
     margin-left: 100px;
@@ -12,10 +13,17 @@
 
 .content {
     text-align: center;
-    color: white;
+    
 }
 
-.content:hover {
+.black {
     background-color: black;
-    color: black;
 }
+
+/*
+.content:hover {
+    background-color: grey;
+    color: grey;
+}
+*/
+
