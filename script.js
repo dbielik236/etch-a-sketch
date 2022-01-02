@@ -14,6 +14,6 @@ for (i=1; i<number+1; i++) {
 const contents = document.querySelectorAll('div');
 contents.forEach((div) => {
   div.addEventListener('mouseover', () => {
-    console.log('Works!');
+    div.classList.add('black');
   });
 });
