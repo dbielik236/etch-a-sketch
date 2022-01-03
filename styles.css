@@ -16,7 +16,6 @@ header {
     width: 500px;
     border-color: black;
     border-style: solid;
-    
 }   
 
 .content {
@@ -27,6 +26,7 @@ header {
     color: black;
     background-color: black;
 }
+
 
 main {
     display: flex;
@@ -42,14 +42,23 @@ section {
 }
 
 button {
-    background-color: lightsalmon;
+    background-color: grey;
     border-style: solid;
-    border-color: white;
-    border-radius: 2px;
+    border-color: darkgrey;
+    border-radius: 4px;
     height: 100px;
     width: 300px;
     font-size: 30px;
     
+}
+
+button:hover {
+    background-color: rgb(151, 151, 151);
+    transition: .11s;
+}
+
+button:active {
+    transform:scale(.99) ;
 }
 
 
