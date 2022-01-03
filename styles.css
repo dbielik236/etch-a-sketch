@@ -7,10 +7,8 @@ header {
     background-color: grey;
     display: grid;
     grid-template-columns: repeat(100, auto);
-
     height: 500px;
     width: 500px;
-    
     border-color: black;
     border-style: solid;
 }
@@ -24,5 +22,7 @@ header {
     color: black;
     background-color: black;
 }
+
+
 
 

@@ -1,3 +1,4 @@
+//creates the grid
 const number = 10000;
 
 for (i=1; i<number+1; i++) {
@@ -9,10 +10,20 @@ for (i=1; i<number+1; i++) {
 }   
 
 
-
+//draws the black
 const contents = document.querySelectorAll('div');
 contents.forEach((div) => {
   div.addEventListener('mouseover', () => {
     div.classList.add('black');
+  });
+});
+
+
+//erases board
+const eraseButton = document.querySelector('#eraseButton');
+eraseButton.addEventListener('click', () => {
+  const contents = document.querySelectorAll('div');
+  contents.forEach((div) => {
+      div.classList.remove('black');
   });
 });
