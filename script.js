@@ -27,3 +27,19 @@ eraseButton.addEventListener('click', () => {
       div.classList.remove('black');
   });
 });
+
+
+/*
+THIS IS THE FUNCTION FOR CREATING A RANDOM COLOR
+    function createColor() {
+      const randomColor = Math.floor(Math.random()*16777215).toString(16)
+      return('#'+randomColor);
+      }
+      console.log(createColor());
+*/
+
+
+
+
+   
+  

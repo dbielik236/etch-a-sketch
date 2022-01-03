@@ -1,27 +1,59 @@
+body {
+    background-color: indianred;
+}
+
 header {
     text-align: center;
     font-size: 50px;
+    margin: 20px;
 }
 
 #container {
-    background-color: grey;
+    background-color: cornsilk;
     display: grid;
     grid-template-columns: repeat(100, auto);
     height: 500px;
     width: 500px;
     border-color: black;
     border-style: solid;
-}
+    
+}   
 
 .content {
     text-align: center;
-    
 }
 
 .black {
     color: black;
     background-color: black;
 }
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+button {
+    background-color: lightsalmon;
+    border-style: solid;
+    border-color: white;
+    border-radius: 2px;
+    height: 100px;
+    width: 300px;
+    font-size: 30px;
+    
+}
+
+
+
 
 
 
