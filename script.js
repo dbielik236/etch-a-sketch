@@ -1,6 +1,4 @@
 //creates the grid
-
-
 const number = 10000;
 
 for (i=1; i<number+1; i++) {
@@ -10,8 +8,6 @@ for (i=1; i<number+1; i++) {
     container.appendChild(content); 
 }
  
-
-
 //default black
 const contents = document.querySelectorAll('div');
   contents.forEach((div) => {
@@ -20,9 +16,7 @@ const contents = document.querySelectorAll('div');
     });
   });
 
-//black button
-const blackButton = document.querySelector('#blackButton');
-blackButton.addEventListener('click', () => {
+function drawBlack() {
   const contents = document.querySelectorAll('div');
   contents.forEach((div) => {
     div.addEventListener('mouseover', () => {
@@ -31,11 +25,9 @@ blackButton.addEventListener('click', () => {
       div.classList.add('black');
     });
   });
-});
+}
 
-//blue button
-const blueButton = document.querySelector('#blueButton');
-blueButton.addEventListener('click', () => {
+function drawBlue() {
   const contents = document.querySelectorAll('div');
   contents.forEach((div) => {
     div.addEventListener('mouseover', () => {
@@ -44,11 +36,9 @@ blueButton.addEventListener('click', () => {
       div.classList.add('blue');
     });
   });
-});
+}
 
-//red button
-const redButton = document.querySelector('#redButton');
-redButton.addEventListener('click', () => {
+function drawRed() {
   const contents = document.querySelectorAll('div');
   contents.forEach((div) => {
     div.addEventListener('mouseover', () => {
@@ -57,21 +47,16 @@ redButton.addEventListener('click', () => {
       div.classList.add('red');
     });
   });
-});
+}
 
-//erases board
-const eraseButton = document.querySelector('#eraseButton');
-eraseButton.addEventListener('click', () => {
+function eraseBoard() {
   const contents = document.querySelectorAll('div');
   contents.forEach((div) => {
       div.classList.remove('black');
       div.classList.remove('blue');
       div.classList.remove('red');
   });
-});
-
-
-
+}
 
 /*
 THIS IS THE FUNCTION FOR CREATING A RANDOM COLOR
