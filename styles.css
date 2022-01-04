@@ -7,13 +7,11 @@ header {
     text-align: center;
     font-size: 50px;
     margin: 20px;
-    
 }
 
 p {
     text-align: center;
     font-size: 24px;
-    
 }
 
 #container {
@@ -24,17 +22,44 @@ p {
     width: 500px;
     border-color: black;
     border-style: solid;
+}
+
+.smallButton {
+    background-color: cornsilk;
+    display: grid;
+    grid-template-columns: repeat(100, auto);
+    height: 500px;
+    width: 500px;
+    border-color: black;
+    border-style: solid;
 }   
+
+.mediumButton {
+    background-color: cornsilk;
+    display: grid;
+    grid-template-columns: repeat(50, auto);
+    height: 500px;
+    width: 500px;
+    border-color: black;
+    border-style: solid;
+}   
+
 
 .content {
     text-align: center;
 }
 
 .black {
-    color: black;
     background-color: black;
 }
 
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
 
 main {
     display: flex;
@@ -46,7 +71,6 @@ section {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    
 }
 
 button {
@@ -57,7 +81,6 @@ button {
     height: 100px;
     width: 300px;
     font-size: 30px;
-    
 }
 
 button:hover {
