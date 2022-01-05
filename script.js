@@ -67,7 +67,15 @@ THIS IS THE FUNCTION FOR CREATING A RANDOM COLOR
       console.log(createColor());
 */
 
-
+window.addEventListener('keydown', () => {
+    
+      const contents = document.querySelectorAll('div');
+      contents.forEach((div) => {
+          div.classList.remove('black');
+          div.classList.remove('blue');
+          div.classList.remove('red');
+      });
+    });
 
 
 
